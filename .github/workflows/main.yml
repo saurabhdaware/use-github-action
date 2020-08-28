@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: saurabhdaware/hello-github-action@main
+      uses: saurabhdaware/hello-github-action
       with:
         who-to-greet: 'Abell'
     # Use the output from the `hello` step
