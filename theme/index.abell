@@ -1,5 +1,5 @@
 <html>
 <body>
-  {{ 3 + 5 }}
+  {{ Abell.importContent('../README.md') }}
 </body>
 </html>
