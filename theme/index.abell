@@ -1,6 +1,6 @@
 <html>
 <body>
-  Amazing Layout
+  Layout
   {{ Abell.importContent('../README.md') }}
 </body>
 </html>
