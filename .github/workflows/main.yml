@@ -3,7 +3,7 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Abell Website Deployment
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -11,4 +11,5 @@ jobs:
       id: hello
       uses: saurabhdaware/hello-github-action@master
       with:
-        site-path: 'theme'
+        site-path: 'site'
+        deploy-branch: 'main'
