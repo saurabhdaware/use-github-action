@@ -1,6 +1,6 @@
 <html>
 <body>
-  Lets see if it works
+  Log github payload
   {{ Abell.importContent('../README.md') }}
 </body>
 </html>
