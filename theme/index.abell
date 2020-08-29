@@ -1,6 +1,6 @@
 <html>
 <body>
-  Layout
+  gh-pages Layout
   {{ Abell.importContent('../README.md') }}
 </body>
 </html>
