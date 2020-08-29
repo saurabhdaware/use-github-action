@@ -1,6 +1,6 @@
 <html>
 <body>
-  GitHub Page Layout
+  Lets see if it works
   {{ Abell.importContent('../README.md') }}
 </body>
 </html>
