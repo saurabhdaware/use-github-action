@@ -9,6 +9,6 @@ jobs:
       uses: actions/checkout@v2
     - name: Hello world action step
       id: hello
-      uses: saurabhdaware/hello-github-action@v0.8
+      uses: saurabhdaware/hello-github-action@master
       with:
-        theme-path: 'theme/index.abell'
+        site-path: 'theme'
