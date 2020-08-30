@@ -11,5 +11,5 @@ jobs:
       id: hello
       uses: saurabhdaware/hello-github-action@master
       with:
-        site-path: 'site'
+        site-path: 'https://github.com/saurabhdaware/abell-readme-layout'
         deploy-branch: 'main'

@@ -1,6 +1,0 @@
-<html>
-<body>
-  Hehehe Now?
-  {{ Abell.importContent('../README.md') }}
-</body>
-</html>
