@@ -7,9 +7,9 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Hello world action step
-      id: hello
-      uses: saurabhdaware/hello-github-action@master
+    - name: Abell Pages Action
+      id: abell-pages
+      uses: saurabhdaware/abell-pages-action@master
       with:
         site-path: 'https://github.com/saurabhdaware/abell-readme-layout'
         deploy-branch: 'main'
