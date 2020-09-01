@@ -2,5 +2,4 @@
 
 Example of using the github action that I created
 
-
-Xyz
+ABCD
