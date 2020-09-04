@@ -1,0 +1,77 @@
+
+
+
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto;xdisplay=swap" rel="stylesheet"/>
+  <link href="./index.css" rel="stylesheet" />
+</head>
+<body>
+  <nav id="topnav">
+    <div class="brand-container display-inline-block font-secondary">
+      <a href="#" id="brand">Use Github Action</a>
+    </div>
+    <div class="right-items">
+      <a href="https://github.com/saurabhdaware/use-github-action" class="nav-item">GitHub</a>
+      <a href="https://github.com/saurabhdaware/use-github-action/fork" class="nav-item">Fork</a>
+    </div>
+  </nav>
+
+  <section id="header" class="header">
+    <div class="header-content">
+      <span class="text-xxl">Use Github Action</span>
+      <div style="padding: 13px 0px 2px 0px;">
+        <span 
+          class="stars" 
+          style="font-size: 1.2rem;" 
+        >
+          <span style="font-size: larger">&#9733;</span> 0
+        </span>
+        <span>&nbsp; | &nbsp;</span>
+      </div>
+      <p class="description">Example of using the github action that I created</p>
+      <a class="view-github-link" href="saurabhdaware/use-github-action">View on GitHub</a>
+    </div>
+  </section>
+
+  <main>
+    <h1 id="abell-page-action">Abell Page Action</h1>
+<p>Example of using Abell Pages Action (Experimental)</p>
+<p><strong>Demo:</strong> <a href="https://saurabhdaware.github.io/use-github-action">https://saurabhdaware.github.io/use-github-action</a></p>
+<h2 id="host-your-github-page-with-abell-pages-action">Host your GitHub Page with Abell Pages Action</h2>
+<ul>
+<li>Create <code>.github/workflows/abell-deploy.yml</code> with content</li>
+</ul>
+<pre><code class="language-yaml">on:
+  push:
+    branches: [master] # branch to trigger deploy, mostly default branch
+
+jobs:
+  abell-deploy:
+    runs-on: ubuntu-latest
+    name: Abell Website Deployment
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Abell Pages Action
+      id: abell-pages
+      uses: saurabhdaware/abell-pages-action@v0.10.0
+      with:
+        site-path: 'https://github.com/saurabhdaware/abell-readme-layout'
+        deploy-branch: 'master' # branch to deploy from, mostly default branch
+</code></pre>
+<ul>
+<li>In Repository Settings -&gt; GitHub Pages, set source branch to <code>gh-pages</code> and directory to <code>/docs</code>.</li>
+<li>Tadaa 🎉 Your website will be hosted on <code>https://&lt;your-github-username&gt;.github.io/&lt;repository-name&gt;</code></li>
+</ul>
+<p>For reference, you can look into <a href=".github/workflows/abell-deploy.yml">.github/workflows/abell-deploy.yml</a></p>
+<p>Thanks!</p>
+  </main>
+
+  <footer>Built with <a target="_blank" rel="noopener" href="https://abelljs.org">Abell</a></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+  <script>hljs.initHighlighting()</script>
+  <link rel="stylesheet" href="./highlight.css"/>
+</body>
+</html>
